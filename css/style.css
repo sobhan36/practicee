@@ -1,0 +1,334 @@
+:root{
+  --black:#222222;
+--ash:#848484;
+--azure:#abe5fa;
+  --arimo:'Arimo', sans-serif;
+  --abrilfateface: 'Abril Fatface', serif;
+  --cardbackgroundcolor:#f5f5f5;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width:1170px;
+  margin: auto;
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+
+ul,li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.heading h2{
+  color:var(--black);
+  font-size:32px;
+  font-family:var(--abrilfateface);
+  font-weight:400;
+}
+
+.heading p{
+  color:var(--ash);
+  font-size:16px;
+  font-family:var(--arimo);
+  font-weight:400;
+}
+
+
+.alignitem{
+  align-items: center;
+}
+
+/* NAV START HERE */
+nav{
+  border-top: 5px solid #abe5fa;
+  background-color: #fef8ff;
+}
+.logo{
+  width: 20%;
+  margin-top: 26px;
+}
+ .menu{
+width: 80%;
+align-items: right;
+padding: 95px 0;
+}
+.menu li{
+  padding: 0 26px;
+}
+
+.menu li a{
+  color:var(--ash);
+  font-size:20px;
+  font-family:var(--arimo);
+  font-weight:400;
+}
+
+.menu li span{
+ background-color: var(--azure);
+  font-size:20px;
+  font-family:var(--arimo);
+  font-weight:400; 
+  color:white;
+  background-color: var(--azure);
+  padding: 20px 19px;
+  border-radius: 5px;
+}
+
+
+
+/* NAV START END */
+
+
+
+
+
+/* BANNER START HERE */
+
+#banner .text h1{
+  width: 50%;
+  font-size:58px;
+  font-family:var(--abrilfateface);
+  font-weight:400; 
+  color:var(--black);
+
+  
+}
+
+#banner .text p{
+  font-size:18px;
+  font-family:var(--arimo);
+  font-weight:400; 
+  color:var(--ash);
+}
+
+#banner .text{
+  width: 50%;
+
+}
+
+
+#banner .picture{
+  width: 50%;
+ text-align: end;
+}
+
+
+
+/* BANNER END HERE */
+
+
+/* Popular Catagories start */
+
+
+#popular .heading{
+  text-align: center;
+  padding: 105px 0 95px 0;
+  line-height: 30px;
+  margin: 30px;
+}
+
+.popular_card{
+ width: calc(25% - 30px);
+  margin:15px 15px;
+  text-align: center;
+  padding: 73px 68px;
+  background-color: var(--cardbackgroundcolor);
+  position: relative;
+ 
+}
+
+.popular_card h3{
+  color:var(--black) ;
+  font-size: 24px;
+  font-family: var(--abrilfateface);
+  font-weight:400 ;
+ 
+}
+.popular_card p{
+  color: var(--ash);
+  font-size:14px ;
+  font-family:var(--arimo) ;
+  font-weight:400;
+ 
+}
+
+
+.popular_card .overlay{
+  position: absolute;
+  background-color: #4ccef4;
+  text-align: center;
+inset:0;
+opacity: 0;
+visibility: hidden;
+transition: .5s;
+align-items: center;
+padding-top: 45px;
+box-shadow: 0 5px  #beedfb;
+}
+
+.overlay h3
+{
+  color: white;
+}
+
+.overlay p
+{
+  color: white;
+}
+
+
+
+
+.popular_card:hover .overlay{
+  opacity: 1;
+visibility:visible;
+color:white;
+z-index: 1;
+margin:-40px -40px;
+border-radius: 5px;
+
+}
+
+/* Popular Catagories END */
+
+
+/* Works start HERE */
+
+
+#works .heading{
+  text-align: center;
+  margin-top:170px;
+  padding: 24px 0;
+}
+ #works .heading h2{
+  text-transform: capitalize;
+ }
+
+.worker_card {
+  width: calc(33.33% - 44px);
+  margin: 0 22px;
+  
+  text-align: center;
+margin-bottom: 154px;
+}
+
+.worker_card h4{
+  color:var(--black) ;
+  font-family:var(--abrilfateface) ;
+  font-size:20px ;
+  font-weight:400 ;
+}
+.worker_card img{
+  background-color:#f5f5f5;
+  padding: 20px;
+  transition: .3s;
+}
+
+.worker_card:hover img{
+  background-color:var(--azure);
+  padding: 20px;
+}
+/* Works END HERE */
+
+
+/* TOP REMOTE WORKER STARTT */
+#remote{
+  background-color:#f5f5f5;
+  padding: 55px 0;
+}
+#remote .heading{
+  text-align: center;
+}
+
+.worker_profile{
+  width: calc(33.33% - 30px);
+  margin: 0 15px;
+  background-color: white;
+ 
+  text-align: center;
+  padding: 38px 38px 0px 38px ;
+  
+}
+
+
+.worker_profile h5{
+ color:var(--black) ;
+  font-family:var(--arimo);
+  font-size:20px;
+  font-weight:800;
+}
+
+.worker_profile p{
+  color:var(--ash) ;
+   font-family:var(--arimo);
+   font-size:16px;
+   font-weight:400;
+ }
+
+ 
+
+ 
+ .worker_profile .details ul{
+  border-top: 1px solid #ccc;
+ }
+
+
+ .flex{
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .details ul li{
+  padding: 15px 0;
+  color:var(--black) ;
+  font-family:var(--arimo);
+  font-size:14px;
+  font-weight:800;
+ }
+ 
+
+
+ .details ul li span::after{
+  content: url(../image/flagbangladesh.png);
+  text-align: center;
+ }
+
+.details  span p{
+ padding:40px;
+ color:black;
+  font-family:var(--abrilfateface);
+  font-size:18px;
+  font-weight:800;
+  
+ 
+}
+
+.details .overlayy{
+  /* visibility: hidden;
+  opacity:0; */
+  position: relative;
+  color: #4ccef4;
+}
+
+.worker_profile:hover  span p{
+  border-bottom: 5px solid #4ccef4;
+  color: #4ccef4;
+}
+
+.details:hover .overlayy{
+  color: #4ccef4;
+  visibility: 1;
+  visibility: visible;
+  position: absolute;
+}
+/* TOP REMOTE WORKER END */
